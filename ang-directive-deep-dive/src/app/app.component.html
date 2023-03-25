@@ -40,10 +40,17 @@
       </ul>
       <p appBasicHighlight>This paragragh is stylezed with the  personal directive created </p>
       <p betterBasicHighlightDirective 
-      [appBetterHighlightColor]="'orange'" 
-      [defaultColor]="'lightblue'">This paragragh use the personal directive with
+      [appBetterHighlightColor]="color1" 
+      [defaultColor]="color2">This paragragh use the personal directive with
         best pratice , using  the class Renderer2.
       </p>
+
+      <div class="card card-text" [ngSwitch]="color1">
+        <p>Ng Switch with the information of choosed color:</p>
+        <p *ngSwitchCase="'orange'">The choosed color was oragnge on background color  in hover effect in 2th paragragh</p>
+        <p *ngSwitchCase="'lightblue'">The choosed color was lightblue on background color  in hover effect in 2th paragragh</p>
+        <p *ngSwitchDefault>No color was selected </p>
+      </div>
       </div>
     </div>
   </div>

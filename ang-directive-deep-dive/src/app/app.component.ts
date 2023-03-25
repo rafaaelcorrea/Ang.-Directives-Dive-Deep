@@ -9,6 +9,9 @@ export class AppComponent  implements OnInit{
   oddNumbers: number[] = [1,3,5];
   evenNumbers: number[] =[2,4];
   onlyOddNumbers :boolean = false;
+  color1: string = 'lightblue';
+  color2: string = 'blue';
+    	
   
   constructor(){}
 
